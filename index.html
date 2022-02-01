@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Portfolio Yewon KANG</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="./function.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css"/>
+		<link rel="icon" type="image/x-icon" href="./images/night.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -15,7 +17,6 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -29,7 +30,7 @@
 						<nav>
 							<ul>
 								<li><a href="#project">PROJECT</a></li>
-								<li><a href="#work">INTERNSHIP</a></li>
+								<li><a href="#work">INTERN</a></li>
 								<li><a href="#cv">CV</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
@@ -47,31 +48,55 @@
 							<!-- I will put select timeline menu so that no need to scroll down  -->
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">WORK EXPERIENCE</h2>
-								<h3 class="major"><a href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS]</a></h3>
-								<h4>May 2021 - June 2021</h4>
+							<article style="width: 80vw;" id="work">
+								<h2 class="major">WORK EXPERIENCE<img src="./images/suitcase.png" style="width: 2.5vw;margin-left: 0.3vw; margin-bottom: -0.3vw;"></h2>
+								<h3 class="major"><a href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS / STAGE]</a></h3>
+								<h4 style="color: rgb(191, 214, 255);">May 2021 - June 2021</h4>
+								<img width="600vw"  src="./images/Esynergy.png">
 								<p>▶ role </p>
 								<p>▶ langauge, tool </p>
-								<p>▶ resolved problemes</p>
-								<p>▶ new features created</p>
-								<h3 class="major"><a href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS]</a></h3>
+
+								<p onclick="myFunction(1)">▶ resolved problemes</p>
+								<div style="background-color: brown;display: none;" id="myDIV1" >
+									This is my DIV element.
+								</div>
+
+								<p onclick="myFunction(2)">▶ new features created</p>
+								<div style="background-color: brown;display: none;" id="myDIV2" >
+									This is my DIV element.
+								</div>
+
+
+								<h3 class="major"><a href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS / ALTERNANCE]</a></h3>
 								<h4>October 2021 - June 2021</h4>
+								<img width="600vw" src="images/HomeBoarding.png">
 								<p>▶ role </p>
 								<p>▶ langauge, tool </p>
-								<p>▶ resolved problemes</p>
-								<p>▶ new features created</p>
-								<p>▶ removed features</p>
+								<p onclick="myFunction(3)">▶ resolved problemes</p>
+								<div style="background-color: brown;display: none;" id="myDIV3" >
+									This is my DIV element.
+								</div>
+								<p onclick="myFunction(4)">▶ new features created</p>
+								<div style="background-color: brown;display: none;" id="myDIV4" >
+									This is my DIV element.
+								</div>
+								<p  onclick="myFunction(5)">▶ enhanced security</p>
+								<div style="background-color: brown;display: none;" id="myDIV5" >
+									This is my DIV element.
+								</div>
+								<p  onclick="myFunction(6)">▶ removed features</p>
+								<div style="background-color: brown;display: none;" id="myDIV6" >
+									This is my DIV element.
+								</div>
 							</article>
 
 						<!-- About -->
 							<article id="cv">
-								<h2 class="major">CV</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>You can download CV by clicking the version you want.</p>
-								<a href="./images/CV english.docx" download>CV ENGLSIH</a><br>
-								<a href="./images/CV french.docx" download>CV FRENCH</a><br>
-								<a href="/images/myw3schoolsimage.jpg" download>CV KOREAN</a><br>
+								<b><h1 class="major" style="color: rgb(68, 113, 211);">CV<img src="./images/CV.png" style="width: 2.5vw;margin-left: 0.5vw;"></h1></b>
+								<p>You can find my CV by clicking the version you want.</p>
+								<h3><a href="./images/CV english.pdf" target="_blank">CV ENGLSIH</a></h3><br>
+								<h3><a href="./images/CV french.pdf" target="_blank">CV FRENCH</a></h3><br>
+								<h3><a href="./images/CV french.pdf" target="_blank">CV KOREAN</a></h3><br>
 							</article>
 
 						<!-- Contact -->
@@ -351,6 +376,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
+						<form style="align-items: 'right';">
+							<label for="lang-switch"  style="margin-left:67vw">
+								<span lang="ko">언어</span>
+								<span lang="en">Language</span>
+							</label>
+							<select style="width: 20vw;margin-left:70vw" id="lang-switch">
+								<option value="en" selected  >English</option>
+								<option value="fr"  >Français</option>
+								<option value="ko"  >한국어</option>
+							</select>
+						</form>
 					</footer>
 
 			</div>
