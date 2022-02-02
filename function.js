@@ -47,6 +47,14 @@ function myFunction(a) {
             x.style.display = "none";
         }
     }
+  else if(a==7){
+        var x = document.getElementById("myDIV7");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
 
 
 }
