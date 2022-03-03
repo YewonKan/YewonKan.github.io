@@ -60,8 +60,18 @@
 
 						<!-- Work -->
 							<article style="width: 80vw;" id="work">
+								<select id="selectStage" name="selectStage" class="lstCategorie">
+									<option selected value="stage"  data-show=".stage">
+										Stage de 5 semaines
+									</option>
+									<option value="alternance"  data-show=".alternance">
+										alternance de 10 mois
+									</option>
+								</select>
 								<h2 class="major">WORK EXPERIENCE<img src="./images/suitcase.png" style="width: 2.5vw;margin-left: 0.3vw; margin-bottom: -0.3vw;"></h2>
 								<h3 style="color: rgb(160, 141, 243);" class="major"><a href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS / STAGE]</a></h3>
+								
+								<div  class="stageDiv">
 								<h4 style="color: rgb(191, 214, 255);">May 2021 - June 2021</h4>
 								<img width="600vw"  src="./images/Esynergy.png">
 								<br><h3>▶ role </h3>
@@ -104,9 +114,10 @@
 										<b>[ méthode de résolution ]</b> J'ai cherché sur internet plusieurs manières différentes de le déclarer comme par framework ou fonction de base Php. Après j’ai comparé la date déclarée par quelqu’uns d’autres avant dans un autre fichier php, et finalement j'ai choisi la fonction de base php. Comme la simple comparaison avec la valeur date n'a pas fonctionné, j'ai utilisé "var_dump" et "DD" pour vérifier la situation. Aussi pour vérifier si la condition fonctionne bien, j’ai mit une seule condition qui fonctionne à 100% et vérifie  si elles filtrent bien dans le fichier excel.
 									</p>
 								</div>
-
-
-								<h3 style="color: rgb(160, 141, 243);"  class="major"><a id="stage2" href="https://www.groupeonepoint.com/fr/">[GROUP ONEPOINT PARIS / ALTERNANCE]</a></h3>
+								</div>
+								
+								
+								<div  class="alternanceDiv" hidden>
 								<h4 style="color: rgb(191, 214, 255);">October 2021 - August 2022</h4>
 								<a href="https://homeboarding.onepoint.cloud/"><img width="600vw" src="images/HomeBoarding.png"></a>
 								<h3>▶ role </h3>
@@ -178,6 +189,7 @@
 									</p>
 									<img width="600vw" src="./images/testUni.png">
 								</div>
+								</div>
 							</article>
 
 						<!-- About -->
@@ -190,69 +202,116 @@
 							</article>
 
 						<!-- Timeline -->
-							<article id="contact">
+							<article style="width: 85vw;" id="contact">
 								<div id="experience" class="background-alt">
 									<h2 class="heading">TimeLine</h2>
-									<div id="experience-timeline">
-										<div data-date="2017">
-											<h3 ><a href="./timeline.html">◆Lycée Baekyoung[Anyang/Corée du sud]</a></h3>
-											<h4>Baccalauréat économique</h4>
-											<p>
-												Diplôme obtenu
-											</p>
+									<section id="cd-timeline" class="cd-container">
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-picture">
+											</div>
+								
+											<div class="cd-timeline-content">
+												<h3>Lycée Baekyoung</h3>
+										<div class="timeline-content-info">
+										  <span class="timeline-content-info-title">
+											<i class="fa fa-certificate" aria-hidden="true"></i>
+											Corée du sud [Anyang]
+										  </span>
 										</div>
-							
-										<div data-date="2017 - 2018">
-											<h3>◆Hanyang women's Université [Seoul/Corée]</h3>
-											<h4>Nutrition, Food service industry</h4>
-											<p>
-												Certificate Distribution manager
-											</p>
-										</div>
-							
-										<div data-date="2019-2020">
-											<h3>◆Barmen [Seoul/Corée]</h3>
-											<h4></h4>
-											<p>
-												Je voulais travailler en anglais en économisant de l’argent
-												pour étudier par lequel je suis passionée et puis travailler
-												partout dans le monde<br>
-											</p>
-										</div>
-							
-										<div data-date="2010 - 2021">
-											<h3>◆ORT Daniel Mayer </h3>
-											<h4>BTS SIO option SLAM [INITIAL]</h4>
-											<p>
-												Formation 2 ans 
-												<br>
-												Cours d’algorithmique appliqué sur python, de mathématiques appliquées à l’informatique, de gestion des réseaux, du droit lié à l'informatique.
-											</p>
-										</div>
-										<div data-date="2021 - 2022">
-											<h3><a href="#onepoint">◆Onepoint </h3>
-											<h4>Stage de 5 semaines</h4>
-											<p><a href="file:///C:/Users/82103/YewonKan.github.io/index.html#work">
-												Onepoint : Maintenance corrective et évolutive des outils existants, Développement d’applicatif
-											</a>
-											</p>
-										</div>
-										<div data-date="2021 - 2022">
-											<h3>◆ORT Daniel Mayer </h3>
-											<h4>BTS SIO option SLAM [ALTERNANCE]</h4>
-											<p>
-											</p>
-										</div>
-										<div data-date="2021 - 2022">
-											<h3><a href="#onepoint">◆Onepoint </h3>
-											<h4>Stage de 11 mois</h4>
-											<p><a href="#stage2">
-												Onepoint : Maintenance corrective et évolutive des outils existants, Développement d’applicatif, Base de données
-											</a>
-											</p>
-										</div>
-							
-									</div>
+												<p>Baccalauréat économique</p>
+												<span class="cd-date">2017</span>
+											</div> 
+										</div> 
+								
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-movie">
+											</div> 
+								
+											<div class="cd-timeline-content">
+												<h3>Hanyang women's Université</h3>
+												
+												<h4>[La Nutrition & l'industrie alimentaire]</h4>
+												<div class="timeline-content-info">
+													<span class="timeline-content-info-title">
+													  <i class="fa fa-certificate" aria-hidden="true"></i>
+													  Corée du sud [Seoul]
+													</span>
+												  </div>
+												<p>Certificate Distribution manager<p>
+												<span class="cd-date">2017 - 2018</span>
+											</div>
+										</div> 
+								
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-picture">
+											</div> <!-- cd-timeline-img -->
+								
+											<div class="cd-timeline-content">
+												<h2>Barmen</h2>
+												<div class="timeline-content-info">
+													<span class="timeline-content-info-title">
+													  <i class="fa fa-certificate" aria-hidden="true"></i>
+													  Corée du sud [Seoul]
+													</span>
+												  </div>
+												<p>passer des commandes pour les stocks alchools, communiquer en anglais avec des clients étrangers, prepration du cocktail</p>
+												<span class="cd-date">2019 - 2020</span>
+											</div> 
+										</div> 
+								
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-location">
+											</div> <!-- cd-timeline-img -->
+								
+											<div class="cd-timeline-content">
+												<h3>ORT Daniel Mayer</h3>
+												<div class="timeline-content-info">
+													<span class="timeline-content-info-title">
+													  <i class="fa fa-certificate" aria-hidden="true"></i>
+													  France [Paris/Montreuil]
+													</span>
+												  </div>
+												<h4>BTS SIO option SLAM [INITIAL]</h4>
+												<p>Cours d’algorithmique appliqué sur python, de mathématiques appliquées à l’informatique, de gestion des réseaux, du droit lié à l'informatique.</p>
+												<h4>Stage chez onepoint</h4>
+												<p>Développement d’applicatifs avec respect des délais et des normes de
+													développement, Réalisation des phases de tests, Maintenance corrective et évolutive des outils existants </p>
+												<span class="cd-date">2020-2021</span>
+											</div> <!-- cd-timeline-content -->
+										</div> <!-- cd-timeline-block -->
+								
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-location">
+											</div> 
+								
+											<div class="cd-timeline-content">
+												<h3>ORT Daniel Mayer</h3>
+												<div class="timeline-content-info">
+													<span class="timeline-content-info-title">
+													  <i class="fa fa-certificate" aria-hidden="true"></i>
+													  France [Paris/Montreuil]
+													</span>
+												</div>
+												<h4>BTS SIO option SLAM [ALTERNANCE]</h4>
+												<p>Création de projets en Java, Php</p>
+												<h4>alternance chez onepoint</h4>
+												<p>Développement d’applicatifs avec respect des délais et des normes de développement, Réalisation des phases de tests, Maintenance corrective et évolutive des outils existants</p>
+												<span class="cd-date">2021-2022</span>
+											</div> <!-- cd-timeline-content -->
+										</div> <!-- cd-timeline-block -->
+								
+										<div class="cd-timeline-block">
+											<div class="cd-timeline-img cd-movie">
+											</div> <!-- cd-timeline-img -->
+								
+											<div class="cd-timeline-content">
+												<h3>Projet professionnel</h3>
+												<p>J’ai envie de travailler dans une organisation à dimension internationale en tant qu’experte Backend </p>
+												<span class="cd-date">L'avenir</span>
+											</div> <!-- cd-timeline-content -->
+										</div> <!-- cd-timeline-block -->
+									</section> <!-- cd-timeline -->
+									
 								</div>
 							</article>
 							<article id="onepoint">

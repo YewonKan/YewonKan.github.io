@@ -398,4 +398,18 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+
+					var Privileges = jQuery('#selectStage');
+					var select = this.value;
+					Privileges.change(function () {
+						if ($(this).val() == 'alternance') {
+							$('.alternanceDiv').show();
+							$('.stageDiv').hide(); 
+						}
+						else {
+							$('.alternanceDiv').hide(); 
+							$('.stageDiv').show();
+						}
+					});
+
 })(jQuery);
